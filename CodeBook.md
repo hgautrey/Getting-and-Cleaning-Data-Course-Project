@@ -7,10 +7,10 @@ date: 17/11/2018
 ## Project Description
 Human activity recognition using smartphones.
 
-##Study design and data processing
+## Study design and data processing
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 
-###Collection of the raw data
+### Collection of the raw data
 Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The raw data for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -68,9 +68,9 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-##Creating the tidy datafile
+## Creating the tidy datafile
 
-###Guide to create the tidy data file
+### Guide to create the tidy data file
 1. Check if a directory exists and if not create one.
 2. Download the data into the directory.
 3. Record the date of the download
@@ -88,105 +88,105 @@ tBodyGyroJerkMean
 15. Melt the data frame using melt()(reshape2), using "Activity" and "Subject" as the id variables.
 16. Summerise the data using dcast() (reshape2) to obtain the mean of each variable for each Subject and Activity.
 
-##Variables in the tidy_data.txt file
+## Variables in the tidy_data.txt file
 180 obs. of 81 variables.
 180 obs. = 30 subjects performing 6 activities each
 
-###Activity
+### Activity
 Activity performed by the subject.
 -Factor w/ 6 levels 
 -WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
-###Subject
+### Subject
 The subject id
 -Integer
 -1 to 30
 
-###tBodyAcc-mean()-X
+### tBodyAcc-mean()-X
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tBodyAcc-mean()-Y
+### tBodyAcc-mean()-Y
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc- accelerometer
 Y- Y axis
 
-###tBodyAcc-mean()-Z
+### tBodyAcc-mean()-Z
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Z - Z axis
 
-###tBodyAcc-std()-X
+### tBodyAcc-std()-X
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tBodyAcc-std()-Y
+### tBodyAcc-std()-Y
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tBodyAcc-std()-Z 
+### tBodyAcc-std()-Z 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tGravityAcc-mean()-X 
+### tGravityAcc-mean()-X 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tGravityAcc-mean()-Y
+### tGravityAcc-mean()-Y
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc - accelerometer
 Y - Y axis
 
-###tGravityAcc-mean()-Z 
+### tGravityAcc-mean()-Z 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc- accelerometer
 Z - Z axis
 
-###tGravityAcc-std()-X 
+### tGravityAcc-std()-X 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc- accelerometer
 X- X axis
 
-###tGravityAcc-std()-Y 
+### tGravityAcc-std()-Y 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc- accelerometer
 Y - Y axis
 
-###tGravityAcc-std()-Z 
+### tGravityAcc-std()-Z 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc- accelerometer
 Z - Z axis
 
-###tBodyAccJerk-mean()-X 
+### tBodyAccJerk-mean()-X 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -194,7 +194,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 X - X axis
 
-###tBodyAccJerk-mean()-Y 
+### tBodyAccJerk-mean()-Y 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -202,7 +202,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Y - Y axis
 
-###tBodyAccJerk-mean()-Z 
+### tBodyAccJerk-mean()-Z 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -210,7 +210,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Z - Z axis
 
-###tBodyAccJerk-std()-X
+### tBodyAccJerk-std()-X
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -218,7 +218,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 X - X axis
 
-###tBodyAccJerk-std()-Y 
+### tBodyAccJerk-std()-Y 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -226,7 +226,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Y - Y axis
 
-###tBodyAccJerk-std()-Z 
+### tBodyAccJerk-std()-Z 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -234,49 +234,49 @@ Acc - accelerometer
 Jerk - Jerk signal
 Z - Z axis
 
-###tBodyGyro-mean()-X
+### tBodyGyro-mean()-X
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 X - X axis
 
-###tBodyGyro-mean()-Y
+### tBodyGyro-mean()-Y
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Y - Y axis
 
-###tBodyGyro-mean()-Z 
+### tBodyGyro-mean()-Z 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Z - Z axis
 
-###tBodyGyro-std()-X 
+### tBodyGyro-std()-X 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 X - X axis
 
-###tBodyGyro-std()-Y 
+### tBodyGyro-std()-Y 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Y - Y axis
 
-###tBodyGyro-std()-Z
+### tBodyGyro-std()-Z
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Z - Z axis
 
-###tBodyGyroJerk-mean()-X 
+### tBodyGyroJerk-mean()-X 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -284,7 +284,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 X - X axis
 
-###tBodyGyroJerk-mean()-Y 
+### tBodyGyroJerk-mean()-Y 
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -292,7 +292,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Y - Y axis
 
-###tBodyGyroJerk-mean()-Z
+### tBodyGyroJerk-mean()-Z
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -300,7 +300,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Z - Z axis
 
-###tBodyGyroJerk-std()-X 
+### tBodyGyroJerk-std()-X 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -308,7 +308,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 X - X axis
 
-###tBodyGyroJerk-std()-Y
+### tBodyGyroJerk-std()-Y
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -316,7 +316,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Y - Y axis
 
-###tBodyGyroJerk-std()-Z 
+### tBodyGyroJerk-std()-Z 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -324,35 +324,35 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Z - Z axis
 
-###tBodyAccMag-mean()
+### tBodyAccMag-mean()
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###tBodyAccMag-std() 
+### tBodyAccMag-std() 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###tGravityAccMag-mean()
+### tGravityAccMag-mean()
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###tGravityAccMag-std() 
+### tGravityAccMag-std() 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Gravity - gravity acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###tBodyAccJerkMag-mean()
+### tBodyAccJerkMag-mean()
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -360,7 +360,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###tBodyAccJerkMag-std()  
+### tBodyAccJerkMag-std()  
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -368,21 +368,21 @@ Acc - accelerometer
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###tBodyGyroMag-mean()
+### tBodyGyroMag-mean()
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Mag - magnitude of the three-dimensional signals
 
-###tBodyGyroMag-std() 
+### tBodyGyroMag-std() 
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Mag - magnitude of the three-dimensional signals
 
-###tBodyGyroJerkMag-mean()
+### tBodyGyroJerkMag-mean()
 Averaged mean value for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -390,7 +390,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###tBodyGyroJerkMag-std()
+### tBodyGyroJerkMag-std()
 Averaged standard deviation for each subject doing each activity
 t - time domain signal
 Body - body acceleration signal
@@ -398,70 +398,70 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyAcc-mean()-X
+### fBodyAcc-mean()-X
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 X - X axis
 
-###fBodyAcc-mean()-Y  
+### fBodyAcc-mean()-Y  
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Y - Y axis
 
-###fBodyAcc-mean()-Z
+### fBodyAcc-mean()-Z
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Z - Z axis
 
-###fBodyAcc-std()-X 
+### fBodyAcc-std()-X 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 X - X axis
 
-###fBodyAcc-std()-Y  
+### fBodyAcc-std()-Y  
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Y - Y axis
 
-###fBodyAcc-std()-Z 
+### fBodyAcc-std()-Z 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Z - Z axis
 
-###fBodyAcc-meanFreq()-X
+### fBodyAcc-meanFreq()-X
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 X - X axis
 
-###fBodyAcc-meanFreq()-Y
+### fBodyAcc-meanFreq()-Y
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Y - Y axis
 
-###fBodyAcc-meanFreq()-Z
+### fBodyAcc-meanFreq()-Z
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Z - Z axis
 
-###fBodyAccJerk-mean()-X 
+### fBodyAccJerk-mean()-X 
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -469,7 +469,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 X - X axis
 
-###fBodyAccJerk-mean()-Y
+### fBodyAccJerk-mean()-Y
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -477,7 +477,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Y - Y axis
 
-###fBodyAccJerk-mean()-Z 
+### fBodyAccJerk-mean()-Z 
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -485,7 +485,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Z - Z axis
 
-###fBodyAccJerk-std()-X
+### fBodyAccJerk-std()-X
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -493,7 +493,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 X - X axis
 
-###fBodyAccJerk-std()-Y 
+### fBodyAccJerk-std()-Y 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -501,7 +501,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Y - Y axis
 
-###fBodyAccJerk-std()-Z
+### fBodyAccJerk-std()-Z
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -509,7 +509,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Z - Z axis
 
-###fBodyAccJerk-meanFreq()-X 
+### fBodyAccJerk-meanFreq()-X 
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -517,7 +517,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 X - X axis
 
-###fBodyAccJerk-meanFreq()-Y  
+### fBodyAccJerk-meanFreq()-Y  
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -525,7 +525,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Y - Y axis
 
-###fBodyAccJerk-meanFreq()-Z
+### fBodyAccJerk-meanFreq()-Z
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -533,91 +533,91 @@ Acc - accelerometer
 Jerk - Jerk signal
 Z - Z axis
 
-###fBodyGyro-mean()-X 
+### fBodyGyro-mean()-X 
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 X - X axis
 
-###fBodyGyro-mean()-Y 
+### fBodyGyro-mean()-Y 
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Y - Y axis
 
-###fBodyGyro-mean()-Z 
+### fBodyGyro-mean()-Z 
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Z - Z axis
 
-###fBodyGyro-std()-X 
+### fBodyGyro-std()-X 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 X - X axis
 
-###fBodyGyro-std()-Y 
+### fBodyGyro-std()-Y 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Y - Y axis
 
-###fBodyGyro-std()-Z
+### fBodyGyro-std()-Z
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Z - Z axis
 
-###fBodyGyro-meanFreq()-X 
+### fBodyGyro-meanFreq()-X 
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 X - X axis
 
-###fBodyGyro-meanFreq()-Y 
+### fBodyGyro-meanFreq()-Y 
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Y - Y axis
 
-###fBodyGyro-meanFreq()-Z
+### fBodyGyro-meanFreq()-Z
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Z - Z axis
 
-###fBodyAccMag-mean()
+### fBodyAccMag-mean()
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###fBodyAccMag-std()  
+### fBodyAccMag-std()  
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###fBodyAccMag-meanFreq()
+### fBodyAccMag-meanFreq()
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Acc - accelerometer
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyAccJerkMag-mean()
+### fBodyBodyAccJerkMag-mean()
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -625,7 +625,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyAccJerkMag-std() 
+### fBodyBodyAccJerkMag-std() 
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -633,7 +633,7 @@ Acc - accelerometer
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyAccJerkMag-meanFreq() 
+### fBodyBodyAccJerkMag-meanFreq() 
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -641,28 +641,28 @@ Acc - accelerometer
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroMag-mean()   
+### fBodyBodyGyroMag-mean()   
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroMag-std()  
+### fBodyBodyGyroMag-std()  
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroMag-meanFreq()
+### fBodyBodyGyroMag-meanFreq()
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
 Gyro - gyroscope
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroJerkMag-mean()
+### fBodyBodyGyroJerkMag-mean()
 Averaged mean value for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -670,7 +670,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroJerkMag-std()
+### fBodyBodyGyroJerkMag-std()
 Averaged standard deviation for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -678,7 +678,7 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-###fBodyBodyGyroJerkMag-meanFreq()
+### fBodyBodyGyroJerkMag-meanFreq()
 Averaged mean frequency for each subject doing each activity
 f - frequency domain signal
 Body - body acceleration signal
@@ -686,6 +686,6 @@ Gyro - gyroscope
 Jerk - Jerk signal
 Mag - magnitude of the three-dimensional signals
 
-##Sources
+## Sources
 http://datasciencespecialization.github.io/getclean/
 https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/
